@@ -64,6 +64,40 @@ body {
   animation: gradientBG 15s ease infinite;
 }
 
+.spot-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.spot-background::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(white 1px, transparent 1px);
+  background-size: 20px 20px;
+  animation: moveSpots 60s linear infinite;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+@keyframes moveSpots {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-50px, -50px);
+  }
+}
+
+
+
 @keyframes gradientBG {
   0% {
     background-position: 0% 50%;
@@ -96,7 +130,7 @@ body {
     0 0 5px var(-pink-glow),
     0 0 10px var(-pink-glow),
     0 0 15px var(--pink-glow),
-    0 0 20px var(--pink-glow),
+    0 0 20px var(-git -pink-glow),
     /* Inner subtle white to make text slightly more visible if needed */
     1px 1px 2px rgba(220,220,220,0.1);
   animation: gentlePulseText 4s infinite alternate ease-in-out;

@@ -44,6 +44,7 @@ const HomePage: React.FC = () => {
   return (
     <div className="home-page-container">
       <div className="animated-gradient-background"></div>
+      <div class="spot-background"></div>
       <div className="floating-hearts-container" ref={heartsContainerRef}></div>
       <div className="content-center">
         <h1 className="main-title">Happy Mother's Day</h1>
