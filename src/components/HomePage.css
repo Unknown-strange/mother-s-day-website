@@ -88,9 +88,9 @@ body {
 
 .main-title, .sub-title {
   font-family: 'Great Vibes', cursive;
-  font-size: 4rem; 
+  font-size: 4.5rem; 
   font-weight: normal; 
-  color: rgba(200, 15, 132, 0.67); /* Slightly more visible base for blending */
+  color: rgba(255, 10, 165, 0.842); /* Slightly more visible base for blending */
   text-shadow:
     /* Softer Pink glow */
     0 0 5px var(--soft-pink-glow),
